@@ -1,0 +1,64 @@
+<div class="mainpg">
+<h2 mat-dialog-title >Settings</h2>
+<mat-dialog-content class="mat-typography">
+  <div class="content" fxLayout="row">
+
+		<div fxFlex="65" class="sec1">
+      <div class="reorder-columns-panel">
+        <div cdkDropList class="reorder-list" (cdkDropListDropped)="onReorderColumns($event)">
+          
+          <div
+            class="reorder-panel"
+            *ngFor="let column of mass"
+            cdkDrag
+            [cdkDragDisabled]="column.pinned == 'left'"
+            [ngClass]="{'hides': !column.visible}"
+            cdkDragLockAxis="y"
+            cdkDragBoundary=".reorder-columns-panel"
+            (click)="oncliled(column)"
+          >
+        
+            <i class="material-icons reorder-icon">swap_vert</i>
+            <span class="column-name">{{ column.name | translate }}</span>
+            <ccss-icon
+              [name]="column.pinned ? 'pin' : 'pin-outline'"
+              [size]="20"
+              class="pinned-column"
+              [ngClass]="{ 'select-color': column.pinned, 'disabled-icon': column.name === 'MachineName' }"
+              (click)="onPinnedClick(column)"
+            ></ccss-icon>
+            <i
+              class="material-icons toggle-column"
+              [ngClass]="{ 'select-color': !column.visible, 'disabled-icon': column.name === 'MachineName' }"
+              (click)="onShowOrHideClick(column)"
+              >{{ column.visible ? 'visibility' : 'visibility_off' }}
+            </i>
+            <!-- <span>{{column.width}}</span> -->
+          </div>
+        </div>
+       
+      </div>
+		</div>
+		<div fxFlex="35" class="sec2">
+      <h3>Column Name</h3>
+      <h3>{{default.name}}</h3>
+      <form #addCommandForm="ngForm">
+      <mat-form-field appearance="outline" style="padding: 10px;">
+        <mat-label>Column Width</mat-label>
+        <input matInput type="number" name="selectedwidth"  [value]="default.width" [(ngModel)]="default.width">
+        <span matSuffix>px</span>
+      </mat-form-field>
+    </form>
+		</div>
+	
+
+	</div>
+  
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-raised-button color="warn" mat-dialog-close>Default</button>
+  <button mat-raised-button  mat-dialog-close>cancel</button>
+  <button mat-raised-button color="accent" (click)="submit(addCommandForm , default.name)" cdkFocusInitial>OK</button>
+</mat-dialog-actions>
+
+</div>

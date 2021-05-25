@@ -1,0 +1,15 @@
+<mat-accordion class="example-headers-align" style="width: 100%;" multi>
+    <mat-expansion-panel class="asset-status-wrapper" [expanded]="true" style="margin: 10px 20px;">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+             <b>Asset Utilization</b>
+            </mat-panel-title>
+          </mat-expansion-panel-header> 
+          
+          <div class="content">
+            <ccss-canvas-chart [label]="chartLabel" [dataset]="utilization" [multipleDataset]="true"></ccss-canvas-chart>
+          </div>
+ 
+    </mat-expansion-panel>
+   
+</mat-accordion>

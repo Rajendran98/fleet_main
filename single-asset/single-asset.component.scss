@@ -1,0 +1,36 @@
+.col-container {
+    display: flex;
+    width: 100%;
+
+  }
+  .col {
+    flex: 1;
+ 
+  }
+
+  // .device{
+  //  position: fixed;
+  //  top: 0%;
+  //  left: 0%;
+  //  width: 100%;
+  // }
+//   .mat-expansion-panel-header-description {
+//     display: flex;
+//     justify-content: flex-end;
+//   }
+
+//   mat-expansion-panel-header {
+//     background-color: #ddd !important
+// }
+
+@media only screen and (max-width:768px) {
+    .col-container {
+        display: flex;
+        flex-wrap: wrap;
+       
+      }
+      .col {
+        flex: 100%;
+        margin:10px
+      }
+}

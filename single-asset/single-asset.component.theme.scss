@@ -1,0 +1,16 @@
+@mixin single-asset-component($theme) {
+    $ccss-colors: map-get($theme, ccss);
+    $foreground-map: map-get($theme, foreground);
+    $background-map: map-get($theme, background);
+    $primary: map-get($ccss-colors, $primary-white);
+    $background-color-primary: map-get($background-map, background);
+  
+    $brand-primary: mat-color($ccss-colors, brand-primary);
+    $action-bar-border: map-get($foreground-map, divider);
+  
+    .btn-grp {
+      color: map-get($ccss-colors, brand-600);
+      border-color: map-get($ccss-colors, brand-400);
+      background-color: map-get($ccss-colors, primary-white);
+    }
+  }

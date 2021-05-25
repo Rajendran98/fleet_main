@@ -1,0 +1,49 @@
+.col-container {
+    display: flex;
+    width: 100%;
+
+  }
+  .col {
+    padding: 1px 25px;
+    flex: 1;
+    
+ 
+  }
+  p{
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: normal;
+    color: #666666;
+    text-transform: uppercase;
+    margin: 8px 0px;
+  }
+b{
+  text-transform: uppercase;
+  color: #616161;
+}
+  .mat-expansion-panel-header-description {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  mat-expansion-panel-header {
+    background-color: #ddd !important
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: rgb(119, 119, 240)!important;
+
+}
+
+@media only screen and (max-width:768px) {
+    .col-container {
+        display: flex;
+        flex-wrap: wrap;
+       
+      }
+      .col {
+        flex: 100%;
+        padding: 0px 0px;
+        margin:10px
+        
+      }
+}

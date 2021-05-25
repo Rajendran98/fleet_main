@@ -1,0 +1,10 @@
+mat-expansion-panel-header {
+    background-color: #ddd !important
+}
+b{
+    text-transform: uppercase;
+    color: #616161;
+  }
+.content{
+    height: auto;
+}

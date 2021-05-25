@@ -1,0 +1,50 @@
+<mat-accordion class="example-headers-align"  multi>
+    <mat-expansion-panel class="asset-status-wrapper" [expanded]="true" style="margin: 20px;">
+        <mat-expansion-panel-header class="right-aligned-header">
+            <mat-panel-title>
+             <b>Details</b>
+            </mat-panel-title>
+            <mat-panel-description>
+             <a style="margin-right: 10px;"><mat-icon>home</mat-icon></a>
+             <a style="margin-right: 10px;"><mat-icon>settings</mat-icon></a>
+             <a style="margin-right: 10px;"><mat-icon>account_circle</mat-icon></a>
+            </mat-panel-description>
+          </mat-expansion-panel-header> 
+          
+      <div class="col-container">
+        <div class="col">
+           <p><b>Asset ID: </b> {{sample}}</p>
+           <p><b>Serial Number: </b> </p>
+           <p><b>Manufacturer:</b> </p>
+           <p><b> Model:</b> </p>
+           <p><b>Year: </b> </p>
+           <p><b>Product Family: </b> </p>
+           <p><b>Service Plans: </b> </p>
+           
+        </div>
+        <div class="col">
+           <p><b>Asset Status:</b> </p>
+           <p><b>Geofences: </b> </p>
+           <p><b>Groups: </b> </p>
+           <p><b>Hour Meter: </b> </p>
+           <p><b>Odometer: </b> </p>
+           <p><b>Last Reported Time: </b> </p>
+           <p><b>Location: </b> </p>
+           <p><b> Operator Name: </b> </p>
+           <p><b> Operator ID: </b> </p>
+           <p><b> Custom Asset State:  </b> </p>
+           <div style="padding-left: 30%; margin-top: -20px;">
+            <mat-form-field appearance="outline">
+               <mat-select [value]=" CustomAssetState[0]">
+                  <mat-option *ngFor="let CAS of CustomAssetState" [value]="CAS">
+                     {{CAS}}
+                   </mat-option>
+               </mat-select>
+             </mat-form-field>
+           </div>
+        </div>
+       </div> 
+ 
+    </mat-expansion-panel>
+   
+  </mat-accordion>

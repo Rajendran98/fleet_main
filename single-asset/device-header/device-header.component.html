@@ -1,0 +1,72 @@
+<div class="col-container">
+    <div class="col">
+      <div class="leftside">
+          <a><mat-icon>home</mat-icon></a>
+          <a>1142 <br> TRI</a>
+          <a>12460035 <br> SNM451</a>
+      </div>
+    </div>
+    <div class="col ">
+        <div class="slideshow-container" id="slideshow-container">
+            <div class="mySlides">
+               <p><b>Hour Meter</b><br>59 Hours</p>
+            </div>
+            <div class="mySlides">
+                <p><b>Odometer</b><br>-</p>
+            </div>
+            <div class="mySlides">
+                <p><b>UCID Number</b><br>500713</p>
+            </div>
+            <div class="mySlides">
+                <p><b>UCID Name</b><br>AKTIO CORPORATION</p>
+             </div>
+             <div class="mySlides">
+                 <p><b>DCN Number</b><br>-</p>
+             </div>
+             <div class="mySlides">
+                 <p><b>DCN Name</b><br>AKTIO CORPORATION</p>
+             </div>
+            <a class="prev" (click)="plusSlides(-1)">❮</a>
+            <a class="next" (click)="plusSlides(1)">❯</a>
+    
+     
+         </div>
+
+        <div class="dot-container">
+            <span class="dot" (click)="currentSlide(1)"></span> 
+            <span class="dot" (click)="currentSlide(2)"></span> 
+            <span class="dot" (click)="currentSlide(3)"></span> 
+            <span class="dot" (click)="currentSlide(4)"></span> 
+            <span class="dot" (click)="currentSlide(5)"></span> 
+            <span class="dot" (click)="currentSlide(6)"></span> 
+        </div>
+
+    </div>
+    <div class="col">
+        <div class="rightside">
+            <div class="item">
+                <mat-icon class="icons">settings_input_svideo</mat-icon>
+                <span class="caption">Dashboard</span>
+            </div>
+            <div class="item">
+                <mat-icon class="icons">storage</mat-icon>
+                <span class="caption">Utilization</span>
+            </div>
+            <div class="item">
+                <mat-icon class="icons">text_snippet</mat-icon>
+                <span class="caption">Asset Operation</span>
+            </div>
+            <div class="item">
+                <mat-icon class="icons">room</mat-icon>
+                <span class="caption">Location</span>
+            </div>
+
+            <div class="item">
+                <mat-icon class="icons">more_vert</mat-icon>
+                
+            </div>
+            
+        </div>
+     
+    </div>
+</div>    

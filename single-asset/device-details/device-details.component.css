@@ -1,0 +1,24 @@
+mat-expansion-panel-header {
+    background-color: #ddd !important
+}
+.content{
+    height: 250px;
+   
+    padding: 20px;
+    font-size: medium;
+}
+p{
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: normal;
+    color: #666666;
+  
+
+  }
+b{
+    text-transform: uppercase;
+    color: #616161;
+  }
+.lengths{
+    text-align: center;
+}

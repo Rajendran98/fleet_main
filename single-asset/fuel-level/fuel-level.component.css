@@ -1,0 +1,45 @@
+  mat-expansion-panel-header {
+    background-color: #ddd !important
+}
+p{
+  font-family: Roboto;
+  font-weight: bold;
+  font-style: normal;
+  color: #666666;
+  text-transform: uppercase;
+  margin: 10px 1px;
+ 
+}
+b{
+  text-transform: uppercase;
+  color: #616161;
+}
+.col-container {
+  display: flex;
+  height: 50px;
+  width: 100%;
+
+}
+.col {
+  flex: 1;
+
+}
+.content{
+  height: 250px;
+  padding: 10px;
+  text-align: center;
+}
+.footer{
+padding: 8px;
+  height: 50px;
+  background-color: #ddd;
+
+  font-size: medium;
+}
+.footer1{
+  padding: 10px;
+     height: 50px;
+     background-color: #ddd;
+     text-align: center;
+     font-size: medium;
+ }

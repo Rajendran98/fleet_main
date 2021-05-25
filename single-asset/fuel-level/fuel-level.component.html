@@ -1,0 +1,30 @@
+<mat-accordion class="example-headers-align" multi>
+    <mat-expansion-panel class="asset-status-wrapper" [expanded]="true" style="margin: 10px 20px;">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+             <b>Fuel Level</b>
+            </mat-panel-title>
+          </mat-expansion-panel-header> 
+          <div class="content">
+            <p><b>Lifetime Fuel:</b> 155 Liters</p>
+            <pulse-fuelgauge [wavePercentage]="25"></pulse-fuelgauge>
+          </div>
+          <div class="footer" *ngIf="id === 1">
+            <div class="col-container">
+              <div class="col">
+                 <p>Last Reported Time:</p>
+              </div>
+              <div class="col">
+                 <p> 31/07/19 07:12</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="footer1"  *ngIf="id === 0">
+            <p>No data received</p>
+          </div>
+    
+ 
+    </mat-expansion-panel>
+   
+  </mat-accordion>
